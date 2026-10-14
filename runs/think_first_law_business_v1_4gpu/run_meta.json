@@ -1,0 +1,38 @@
+{
+  "run_id": "think_first_law_business_v1_4gpu",
+  "status": "completed",
+  "description": "LoRA domain top-up on Qwen3.5-4B using rewritten step-reasoning SFT (not think_first commentary)",
+  "generation": 3,
+  "format": "step_reasoning_v1",
+  "sft_format": {
+    "messages": [
+      "user",
+      "assistant"
+    ],
+    "assistant_open": "Let's reason step by step.",
+    "assistant_close": "Therefore, the correct answer is <GOLD>.",
+    "no_system": true,
+    "no_think_tags": true
+  },
+  "sft_pack_resolved": "/mnt/public/data/zhuxz/results/sft_packs/think_first_law_business_v1/rewrite_step_v1/full1804_20260803T091936Z/sft_dataset.jsonl",
+  "sft_n": 1804,
+  "recipe": {
+    "learning_rate": 3e-05,
+    "num_train_epochs": 3.0,
+    "global_batch": 16,
+    "lora_rank": 32,
+    "cutoff_len": 3072,
+    "warmup_ratio": 0.08,
+    "rationale": "Higher cutoff for process traces; full chat-template packing for assistant EOS; drop system so loss is pure process SFT"
+  },
+  "code_dir": "/mnt/public/code/zhuxz/training/runs/think_first_law_business_v1_4gpu",
+  "data_dir": "/mnt/public/data/zhuxz/training_runs/think_first_law_business_v1_4gpu",
+  "updated_at": "2026-08-03T09:50:00Z",
+  "completed": {
+    "global_step": 306,
+    "train_loss": 0.6091,
+    "final_adapter": "/mnt/public/data/zhuxz/training_runs/think_first_law_business_v1_4gpu/checkpoints/final",
+    "train_examples": 1624,
+    "eval_examples": 180
+  }
+}

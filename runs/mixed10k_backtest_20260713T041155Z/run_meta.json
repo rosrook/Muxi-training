@@ -1,0 +1,17 @@
+{
+  "run_id": "mixed10k_backtest_20260713T041155Z",
+  "migrated_at": "2026-08-03T07:49:39.073674+00:00",
+  "status": "completed",
+  "generation": 2,
+  "format": "short_answer_only",
+  "legacy": {
+    "checkpoints": "/mnt/public/data/zhuxz/checkpoints/mixed10k_backtest_20260713T041155Z",
+    "runtime_logs": "/mnt/public/data/zhuxz/runtime_logs/training/mixed10k_backtest_20260713T041155Z",
+    "outputs": null,
+    "sft": "/mnt/public/data/zhuxz/results/mixed_10k/mixed_10k_20260709T095800Z/loop_snapshots/backtest_20260713T041155Z/training/sft_dataset.jsonl",
+    "config_source": "/mnt/public/code/zhuxz/bench_probe_gen/personal_scaffold/runtime_error_case_backtest/qwen35_4b_lora_18k.yaml"
+  },
+  "code_dir": "/mnt/public/code/zhuxz/training/runs/mixed10k_backtest_20260713T041155Z",
+  "data_dir": "/mnt/public/data/zhuxz/training_runs/mixed10k_backtest_20260713T041155Z",
+  "note": "Scripts/config are local copies. Artifacts are symlinked from legacy paths."
+}

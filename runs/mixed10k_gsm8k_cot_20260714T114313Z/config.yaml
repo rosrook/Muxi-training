@@ -1,0 +1,37 @@
+# LoRA SFT for GSM8K-sourced CoT pack (~1.8k rows) on Qwen3.5-4B.
+# personal_scaffold only — does not modify configs/training/*.
+#
+# Notes vs short-answer default:
+# - cutoff_len 2048: rationale + #### targets are longer than letter-only
+# - 2 epochs: small N; 1 epoch often underfits format+math jointly
+# - lr 1e-4: similar to 9k short-answer default (smaller data than 18k)
+
+enabled: true
+backend: native
+
+base_model_path: /mnt/public/data/zhuxz/models/Qwen3.5-4B
+checkpoint_dir: null
+tensorboard_log_dir: null
+
+template: qwen
+finetuning_type: lora
+
+lora_rank: 16
+lora_alpha: 16
+lora_dropout: 0.05
+cutoff_len: 2048
+
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 16
+learning_rate: 1.0e-4
+num_train_epochs: 2.0
+warmup_ratio: 0.1
+val_size: 0.1
+bf16: true
+logging_steps: 5
+save_steps: 50
+seed: 42
+
+attn_implementation: eager
+
+llamafactory_cli: llamafactory-cli

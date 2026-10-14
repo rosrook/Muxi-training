@@ -1,0 +1,2 @@
+{"messages": [{"role": "user", "content": "What is the capital of France?"}, {"role": "assistant", "content": "Paris."}]}
+{"messages": [{"role": "user", "content": "Is 7 prime?"}, {"role": "assistant", "content": "Yes, 7 is a prime number."}]}

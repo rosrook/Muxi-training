@@ -1,0 +1,30 @@
+# LoRA SFT tuned for ~5k generated training examples (~4500 train @ val_size 0.1).
+enabled: true
+backend: native
+
+base_model_path: /mnt/public/data/zhuxz/models/Qwen3.5-4B
+checkpoint_dir: null
+tensorboard_log_dir: null
+
+template: qwen
+finetuning_type: lora
+
+lora_rank: 16
+lora_alpha: 16
+lora_dropout: 0.05
+cutoff_len: 1024
+
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 16
+learning_rate: 5.0e-5
+num_train_epochs: 1.0
+warmup_ratio: 0.03
+val_size: 0.1
+bf16: true
+logging_steps: 20
+save_steps: 100
+seed: 42
+
+attn_implementation: eager
+
+llamafactory_cli: llamafactory-cli

@@ -1,0 +1,58 @@
+# law+business step-reasoning domain top-up (~1804 rewritten rows)
+# Self-owned by this run. Do not share with other runs.
+#
+# === DATA (rewrite_step_v1) ===
+# Source: LLM-rewritten genuine multi-step reasoning (NOT old think_first / distractor style).
+# messages = [user question+options, assistant process trace]
+# Assistant golden format:
+#   Let's reason step by step.
+#   First / Second / ... (Knowledge: ... when needed)
+#   Therefore, the correct answer is <GOLD>.
+#
+# Length (approx English tokens): mean assistant ~150–220 words; p99 sequence often <2k,
+# tails up to ~2.5k → use cutoff_len 3072 so process endings are rarely truncated.
+#
+# === OPTIM (4 GPU) ===
+#   global_batch = 1 * 4 * 4 = 16
+#   train ≈ 1804 * 0.9 ≈ 1624 → ~102 steps/epoch
+#   3 epochs → ~306 steps
+#
+# Rationale vs old think_first 1.8k recipe:
+#   - same LoRA r/α and global batch (fair family)
+#   - LR 3e-5 (small N, cooler than 23k's 5e-5)
+#   - cutoff 3072 (was 2048): protect long process targets
+#   - slightly longer warmup (0.08): process targets are denser than letter-only
+#   - save every 50 steps for mid-run pick
+#
+# Metax / this cluster: attn_implementation must stay eager.
+
+enabled: true
+backend: native
+
+base_model_path: /mnt/public/data/zhuxz/models/Qwen3.5-4B
+checkpoint_dir: null
+tensorboard_log_dir: null
+
+template: qwen
+finetuning_type: lora
+
+lora_rank: 32
+lora_alpha: 64
+lora_dropout: 0.05
+# Higher than letter/think packs: must cover full "Let's reason... Therefore ..." traces.
+cutoff_len: 3072
+
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 4
+learning_rate: 3.0e-5
+num_train_epochs: 3.0
+warmup_ratio: 0.08
+val_size: 0.1
+bf16: true
+logging_steps: 5
+save_steps: 50
+seed: 42
+
+attn_implementation: eager
+
+llamafactory_cli: llamafactory-cli

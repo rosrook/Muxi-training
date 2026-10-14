@@ -1,0 +1,17 @@
+# MACA ms-swift image already has torch. Do NOT install/upgrade torch.
+#
+# Policy aligned with ms_swift_qwen35/run_in_container_len8192.sh:
+# pin explicit ranges + assert in run_in_container.sh (not loose floating upgrades).
+#
+# - transformers 4.x: enough for Llama-3.2; avoid 5.14 create_repo / dep war
+# - accelerate>=1.1: transformers.Trainer needs unwrap_model(keep_torch_compile=...)
+# - peft<0.20: common MACA/ms-swift peft bound
+
+accelerate>=1.1.0,<1.5
+transformers>=4.46.0,<5.0
+peft>=0.11.0,<0.20
+trl>=0.12.0,<0.16
+datasets>=2.19.0,<4.0
+safetensors>=0.4.0
+tqdm>=4.66
+packaging>=23.0

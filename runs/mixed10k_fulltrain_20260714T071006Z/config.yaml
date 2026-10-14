@@ -1,0 +1,36 @@
+# 4-GPU DDP LoRA SFT for ~15-18k mixed_10k / vb replay samples on Qwen3.5-4B.
+# Launch via: bash scripts/training/run_train_job_multigpu.sh
+#
+# Global effective batch = per_device_train_batch_size * n_gpu * gradient_accumulation_steps
+# Default: 1 * 4 * 4 = 16 (matches single-GPU 1 * 1 * 16 in qwen35_4b_lora_18k.yaml)
+#
+# Metax: attn_implementation must stay eager.
+enabled: true
+backend: native
+
+base_model_path: /mnt/public/data/zhuxz/models/Qwen3.5-4B
+checkpoint_dir: null
+tensorboard_log_dir: null
+
+template: qwen
+finetuning_type: lora
+
+lora_rank: 32
+lora_alpha: 64
+lora_dropout: 0.05
+cutoff_len: 1024
+
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 4
+learning_rate: 5.0e-5
+num_train_epochs: 2.0
+warmup_ratio: 0.03
+val_size: 0.1
+bf16: true
+logging_steps: 5
+save_steps: 100
+seed: 42
+
+attn_implementation: eager
+
+llamafactory_cli: llamafactory-cli

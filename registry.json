@@ -1,0 +1,450 @@
+[
+  {
+    "run_id": "v1_remote_1000_02",
+    "status": "completed",
+    "gen": 1,
+    "format": "short_answer",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/v1_remote_1000_02",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/v1_remote_1000_02",
+    "config_source": "/mnt/public/code/zhuxz/bench_probe_gen/configs/training/qwen35_4b_lora.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/v1_remote_1000_02",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_remote_1000_02/tensorboard",
+      "outputs": "link:/mnt/public/data/zhuxz/results/v1_remote_1000_02",
+      "sft_dataset": "link:/mnt/public/data/zhuxz/results/v1_remote_1000_02/training/sft_dataset.jsonl",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_remote_1000_02"
+    }
+  },
+  {
+    "run_id": "v1_remote_3000_01",
+    "status": "completed",
+    "gen": 1,
+    "format": "short_answer",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/v1_remote_3000_01",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/v1_remote_3000_01",
+    "config_source": "/mnt/public/code/zhuxz/bench_probe_gen/configs/training/qwen35_4b_lora_5k.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/v1_remote_3000_01",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_remote_3000_01/tensorboard",
+      "outputs": "link:/mnt/public/data/zhuxz/results/v1_remote_3000_01",
+      "sft_dataset": "link:/mnt/public/data/zhuxz/results/v1_remote_3000_01/training/sft_dataset.jsonl",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_remote_3000_01"
+    }
+  },
+  {
+    "run_id": "test3k_run",
+    "status": "completed",
+    "gen": 2,
+    "format": "short_answer",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/test3k_run",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/test3k_run",
+    "config_source": "/mnt/public/code/zhuxz/bench_probe_gen/configs/training/qwen35_4b_lora.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/test3k_run",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/test3k_run/tensorboard",
+      "outputs": "missing_src",
+      "sft_dataset": "link:/mnt/public/data/zhuxz/results/v2_generator/test3k_run/training/sft_dataset.jsonl",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/test3k_run"
+    }
+  },
+  {
+    "run_id": "mixed10k_backtest_20260713T041155Z",
+    "status": "completed",
+    "gen": 2,
+    "format": "short_answer_only",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/mixed10k_backtest_20260713T041155Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/mixed10k_backtest_20260713T041155Z",
+    "config_source": "/mnt/public/code/zhuxz/bench_probe_gen/personal_scaffold/runtime_error_case_backtest/qwen35_4b_lora_18k.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/mixed10k_backtest_20260713T041155Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/mixed10k_backtest_20260713T041155Z/tensorboard",
+      "outputs": "missing_src",
+      "sft_dataset": "link:/mnt/public/data/zhuxz/results/mixed_10k/mixed_10k_20260709T095800Z/loop_snapshots/backtest_20260713T041155Z/training/sft_dataset.jsonl",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/mixed10k_backtest_20260713T041155Z"
+    }
+  },
+  {
+    "run_id": "mixed10k_fulltrain_20260714T071006Z",
+    "status": "completed",
+    "gen": 2,
+    "format": "short_answer_only",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/mixed10k_fulltrain_20260714T071006Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/mixed10k_fulltrain_20260714T071006Z",
+    "config_source": "/mnt/public/code/zhuxz/bench_probe_gen/personal_scaffold/runtime_error_case_backtest/qwen35_4b_lora_18k_4gpu.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/mixed10k_fulltrain_20260714T071006Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/mixed10k_fulltrain_20260714T071006Z/tensorboard",
+      "outputs": "missing_src",
+      "sft_dataset": "link:/mnt/public/data/zhuxz/results/mixed_10k/mixed_10k_20260709T095800Z/loop_snapshots/fulltrain_20260714T071006Z/training/sft_dataset.jsonl",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/mixed10k_fulltrain_20260714T071006Z"
+    }
+  },
+  {
+    "run_id": "mixed10k_gsm8k_cot_20260714T114313Z",
+    "status": "completed",
+    "gen": 2,
+    "format": "cot_hash_gsm8k",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/mixed10k_gsm8k_cot_20260714T114313Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/mixed10k_gsm8k_cot_20260714T114313Z",
+    "config_source": "/mnt/public/code/zhuxz/bench_probe_gen/personal_scaffold/runtime_error_case_backtest/qwen35_4b_lora_gsm8k_cot.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/mixed10k_gsm8k_cot_20260714T114313Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/mixed10k_gsm8k_cot_20260714T114313Z/tensorboard",
+      "outputs": "missing_src",
+      "sft_dataset": "link:/mnt/public/data/zhuxz/results/mixed_10k/mixed_10k_20260709T095800Z/sft_split_cot_20260714T114313Z/gsm8k/sft_dataset.jsonl",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/mixed10k_gsm8k_cot_20260714T114313Z"
+    }
+  },
+  {
+    "run_id": "mixed10k_stage2_mmlu_replay_20260715T030751Z",
+    "status": "completed",
+    "gen": 2,
+    "format": "stage2_mmlu_cot_replay",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/mixed10k_stage2_mmlu_replay_20260715T030751Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/mixed10k_stage2_mmlu_replay_20260715T030751Z",
+    "config_source": "/mnt/public/code/zhuxz/bench_probe_gen/personal_scaffold/runtime_error_case_backtest/qwen35_4b_lora_stage2_mmlu.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/mixed10k_stage2_mmlu_replay_20260715T030751Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/mixed10k_stage2_mmlu_replay_20260715T030751Z/tensorboard",
+      "outputs": "missing_src",
+      "sft_dataset": "link:/mnt/public/data/zhuxz/results/mixed_10k/mixed_10k_20260709T095800Z/sft_stage2_mmlu_replay_20260715T030751Z/sft_dataset.jsonl",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/mixed10k_stage2_mmlu_replay_20260715T030751Z"
+    }
+  },
+  {
+    "run_id": "fulltrain_vb_4gpu_20260716T064800Z",
+    "status": "completed",
+    "gen": 2,
+    "format": "letter_only_vb",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/fulltrain_vb_4gpu_20260716T064800Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/fulltrain_vb_4gpu_20260716T064800Z",
+    "config_source": "/mnt/public/code/zhuxz/bench_probe_gen/personal_scaffold/runtime_error_case_backtest/qwen35_4b_lora_18k_4gpu.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/fulltrain_vb_4gpu_20260716T064800Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/fulltrain_vb_4gpu_20260716T064800Z/tensorboard",
+      "outputs": "missing_src",
+      "sft_dataset": "link:/mnt/public/data/zhuxz/results/mixed_10k/mixed_10k_20260709T095800Z/loop_snapshots/fulltrain_vb_20260716T064800Z/training/sft_dataset.jsonl",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/fulltrain_vb_4gpu_20260716T064800Z"
+    }
+  },
+  {
+    "run_id": "earlytrain_v5_cot_20260728T022500Z",
+    "status": "completed",
+    "gen": 3,
+    "format": "cot_rationale_v1_zh",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/earlytrain_v5_cot_20260728T022500Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/earlytrain_v5_cot_20260728T022500Z",
+    "config_source": "/mnt/public/code/zhuxz/bench_probe_gen/personal_scaffold/runtime_error_case_backtest/qwen35_4b_lora_earlytrain_v5_cot.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/earlytrain_v5_cot_20260728T022500Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/earlytrain_v5_cot_20260728T022500Z/tensorboard",
+      "outputs": "link:/mnt/public/data/zhuxz/results/mixed_mmlu_aime_math/discovery_v2v2v3_full_20260725T211503Z/loop_snapshots/earlytrain_v5_20260728T022500Z",
+      "sft_dataset": "link:/mnt/public/data/zhuxz/results/mixed_mmlu_aime_math/discovery_v2v2v3_full_20260725T211503Z/loop_snapshots/earlytrain_v5_20260728T022500Z/training/sft_dataset.jsonl",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/earlytrain_v5_cot_20260728T022500Z"
+    }
+  },
+  {
+    "run_id": "earlytrain_v5_scale_9k_4gpu_20260728T065935Z",
+    "status": "completed",
+    "gen": 3,
+    "format": "cot_rationale_v1_zh_scale",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/earlytrain_v5_scale_9k_4gpu_20260728T065935Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/earlytrain_v5_scale_9k_4gpu_20260728T065935Z",
+    "config_source": "/mnt/public/code/zhuxz/bench_probe_gen/personal_scaffold/runtime_error_case_backtest/qwen35_4b_lora_earlytrain_v5_cot_4gpu_9k.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/earlytrain_v5_scale_9k_4gpu_20260728T065935Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/earlytrain_v5_scale_9k_4gpu_20260728T065935Z/tensorboard",
+      "outputs": "link:/mnt/public/data/zhuxz/results/scale_ablation_earlytrain_v5/earlytrain_v5_scale_9k_4gpu_20260728T065935Z",
+      "sft_dataset": "link:/mnt/public/data/zhuxz/results/mixed_mmlu_aime_math/discovery_v2v2v3_full_20260725T211503Z/loop_snapshots/earlytrain_v5_20260728T022500Z/training/scale_subsets/sft_dataset_9k.jsonl",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/earlytrain_v5_scale_9k_4gpu_20260728T065935Z"
+    }
+  },
+  {
+    "run_id": "earlytrain_v5_scale_6k_4gpu_20260728T103731Z",
+    "status": "completed",
+    "gen": 3,
+    "format": "cot_rationale_v1_zh_scale",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/earlytrain_v5_scale_6k_4gpu_20260728T103731Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/earlytrain_v5_scale_6k_4gpu_20260728T103731Z",
+    "config_source": "/mnt/public/code/zhuxz/bench_probe_gen/personal_scaffold/runtime_error_case_backtest/qwen35_4b_lora_earlytrain_v5_cot_4gpu_6k.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/earlytrain_v5_scale_6k_4gpu_20260728T103731Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/earlytrain_v5_scale_6k_4gpu_20260728T103731Z/tensorboard",
+      "outputs": "link:/mnt/public/data/zhuxz/results/scale_ablation_earlytrain_v5/earlytrain_v5_scale_6k_4gpu_20260728T103731Z",
+      "sft_dataset": "link:/mnt/public/data/zhuxz/results/mixed_mmlu_aime_math/discovery_v2v2v3_full_20260725T211503Z/loop_snapshots/earlytrain_v5_20260728T022500Z/training/scale_subsets/sft_dataset_6k.jsonl",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/earlytrain_v5_scale_6k_4gpu_20260728T103731Z"
+    }
+  },
+  {
+    "run_id": "earlytrain_v5_scale_3k_4gpu_20260728T172041Z",
+    "status": "completed",
+    "gen": 3,
+    "format": "cot_rationale_v1_zh_scale",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/earlytrain_v5_scale_3k_4gpu_20260728T172041Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/earlytrain_v5_scale_3k_4gpu_20260728T172041Z",
+    "config_source": "/mnt/public/code/zhuxz/bench_probe_gen/personal_scaffold/runtime_error_case_backtest/qwen35_4b_lora_earlytrain_v5_cot_4gpu_3k.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/earlytrain_v5_scale_3k_4gpu_20260728T172041Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/earlytrain_v5_scale_3k_4gpu_20260728T172041Z/tensorboard",
+      "outputs": "link:/mnt/public/data/zhuxz/results/scale_ablation_earlytrain_v5/earlytrain_v5_scale_3k_4gpu_20260728T172041Z",
+      "sft_dataset": "link:/mnt/public/data/zhuxz/results/mixed_mmlu_aime_math/discovery_v2v2v3_full_20260725T211503Z/loop_snapshots/earlytrain_v5_20260728T022500Z/training/scale_subsets/sft_dataset_3k.jsonl",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/earlytrain_v5_scale_3k_4gpu_20260728T172041Z"
+    }
+  },
+  {
+    "run_id": "earlytrain_v5_scale_1k_4gpu_20260729T063523Z",
+    "status": "completed",
+    "gen": 3,
+    "format": "cot_rationale_v1_zh_scale",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/earlytrain_v5_scale_1k_4gpu_20260729T063523Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/earlytrain_v5_scale_1k_4gpu_20260729T063523Z",
+    "config_source": "/mnt/public/code/zhuxz/bench_probe_gen/personal_scaffold/runtime_error_case_backtest/qwen35_4b_lora_earlytrain_v5_cot_4gpu_1k.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/earlytrain_v5_scale_1k_4gpu_20260729T063523Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/earlytrain_v5_scale_1k_4gpu_20260729T063523Z/tensorboard",
+      "outputs": "link:/mnt/public/data/zhuxz/results/scale_ablation_earlytrain_v5/earlytrain_v5_scale_1k_4gpu_20260729T063523Z",
+      "sft_dataset": "link:/mnt/public/data/zhuxz/results/mixed_mmlu_aime_math/discovery_v2v2v3_full_20260725T211503Z/loop_snapshots/earlytrain_v5_20260728T022500Z/training/scale_subsets/sft_dataset_1k.jsonl",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/earlytrain_v5_scale_1k_4gpu_20260729T063523Z"
+    }
+  },
+  {
+    "run_id": "en_translated_cot_4gpu_20260729T124200Z",
+    "status": "completed",
+    "gen": 3,
+    "format": "en_cot_hash",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/en_translated_cot_4gpu_20260729T124200Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/en_translated_cot_4gpu_20260729T124200Z",
+    "config_source": "/mnt/public/code/zhuxz/bench_probe_gen/personal_scaffold/runtime_error_case_backtest/qwen35_4b_lora_en_translated_cot_4gpu.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/en_translated_cot_4gpu_20260729T124200Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/en_translated_cot_4gpu_20260729T124200Z/tensorboard",
+      "outputs": "link:/mnt/public/data/zhuxz/results/en_translated_cot/en_translated_cot_4gpu_20260729T124200Z",
+      "sft_dataset": "link:/mnt/public/data/zhuxz/results/mixed_mmlu_aime_math/discovery_v2v2v3_full_20260725T211503Z/04_generator_v5/09_items_en_translated/training_cot/sft_dataset.jsonl",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/en_translated_cot_4gpu_20260729T124200Z"
+    }
+  },
+  {
+    "run_id": "en_translated_letter_only_4gpu_20260729T124358Z",
+    "status": "completed",
+    "gen": 3,
+    "format": "en_letter_only",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/en_translated_letter_only_4gpu_20260729T124358Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/en_translated_letter_only_4gpu_20260729T124358Z",
+    "config_source": "/mnt/public/code/zhuxz/bench_probe_gen/personal_scaffold/runtime_error_case_backtest/qwen35_4b_lora_en_translated_letter_only_4gpu.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/en_translated_letter_only_4gpu_20260729T124358Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/en_translated_letter_only_4gpu_20260729T124358Z/tensorboard",
+      "outputs": "link:/mnt/public/data/zhuxz/results/en_translated_letter_only/en_translated_letter_only_4gpu_20260729T124358Z",
+      "sft_dataset": "link:/mnt/public/data/zhuxz/results/mixed_mmlu_aime_math/discovery_v2v2v3_full_20260725T211503Z/04_generator_v5/09_items_en_translated/training_letter_only/sft_dataset.jsonl",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/en_translated_letter_only_4gpu_20260729T124358Z"
+    }
+  },
+  {
+    "run_id": "en_translated_answer_first_think_4gpu_20260731T064450Z",
+    "status": "failed_launch",
+    "gen": 3,
+    "format": "en_answer_first_think",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/en_translated_answer_first_think_4gpu_20260731T064450Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/en_translated_answer_first_think_4gpu_20260731T064450Z",
+    "config_source": "/mnt/public/code/zhuxz/bench_probe_gen/personal_scaffold/runtime_error_case_backtest/qwen35_4b_lora_en_translated_cot_4gpu.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/en_translated_answer_first_think_4gpu_20260731T064450Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/en_translated_answer_first_think_4gpu_20260731T064450Z/tensorboard",
+      "outputs": "link:/mnt/public/data/zhuxz/results/en_translated_answer_first_think/en_translated_answer_first_think_4gpu_20260731T064450Z",
+      "sft_dataset": "link:/mnt/public/data/zhuxz/results/mixed_mmlu_aime_math/discovery_v2v2v3_full_20260725T211503Z/04_generator_v5/09_items_en_translated/training_answer_first_think_v1/sft_dataset.jsonl",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/en_translated_answer_first_think_4gpu_20260731T064450Z"
+    }
+  },
+  {
+    "run_id": "en_translated_answer_first_think_4gpu_20260731T064622Z",
+    "status": "failed_launch",
+    "gen": 3,
+    "format": "en_answer_first_think",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/en_translated_answer_first_think_4gpu_20260731T064622Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/en_translated_answer_first_think_4gpu_20260731T064622Z",
+    "config_source": "/mnt/public/code/zhuxz/bench_probe_gen/personal_scaffold/runtime_error_case_backtest/qwen35_4b_lora_en_translated_cot_4gpu.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/en_translated_answer_first_think_4gpu_20260731T064622Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/en_translated_answer_first_think_4gpu_20260731T064622Z/tensorboard",
+      "outputs": "link:/mnt/public/data/zhuxz/results/en_translated_answer_first_think/en_translated_answer_first_think_4gpu_20260731T064622Z",
+      "sft_dataset": "link:/mnt/public/data/zhuxz/results/mixed_mmlu_aime_math/discovery_v2v2v3_full_20260725T211503Z/04_generator_v5/09_items_en_translated/training_answer_first_think_v1/sft_dataset.jsonl",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/en_translated_answer_first_think_4gpu_20260731T064622Z"
+    }
+  },
+  {
+    "run_id": "en_translated_think_first_final_4gpu_20260731T081559Z",
+    "status": "completed",
+    "gen": 3,
+    "format": "en_think_first_final",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/en_translated_think_first_final_4gpu_20260731T081559Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/en_translated_think_first_final_4gpu_20260731T081559Z",
+    "config_source": "/mnt/public/code/zhuxz/bench_probe_gen/personal_scaffold/runtime_error_case_backtest/qwen35_4b_lora_en_translated_cot_4gpu.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/en_translated_think_first_final_4gpu_20260731T081559Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/en_translated_think_first_final_4gpu_20260731T081559Z/tensorboard",
+      "outputs": "link:/mnt/public/data/zhuxz/results/en_translated_think_first_final/en_translated_think_first_final_4gpu_20260731T081559Z",
+      "sft_dataset": "link:/mnt/public/data/zhuxz/results/mixed_mmlu_aime_math/discovery_v2v2v3_full_20260725T211503Z/04_generator_v5/09_items_en_translated/training_think_first_final_v1/sft_dataset.jsonl",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/en_translated_think_first_final_4gpu_20260731T081559Z"
+    }
+  },
+  {
+    "run_id": "v1_40_20260611T085454Z",
+    "status": "smoke_or_partial",
+    "gen": 1,
+    "format": "smoke",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/v1_40_20260611T085454Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/v1_40_20260611T085454Z",
+    "config_source": "/mnt/public/code/zhuxz/training/templates/lora_4gpu/config.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/v1_40_20260611T085454Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_40_20260611T085454Z/tensorboard",
+      "outputs": "missing_src",
+      "sft_dataset": "missing_src",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_40_20260611T085454Z"
+    }
+  },
+  {
+    "run_id": "v1_40_20260611T091448Z",
+    "status": "smoke_or_partial",
+    "gen": 1,
+    "format": "smoke",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/v1_40_20260611T091448Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/v1_40_20260611T091448Z",
+    "config_source": "/mnt/public/code/zhuxz/training/templates/lora_4gpu/config.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/v1_40_20260611T091448Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_40_20260611T091448Z/tensorboard",
+      "outputs": "link:/mnt/public/data/zhuxz/results/v1_40_20260611T091448Z",
+      "sft_dataset": "missing_src",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_40_20260611T091448Z"
+    }
+  },
+  {
+    "run_id": "v1_40_20260611T091729Z",
+    "status": "smoke_or_partial",
+    "gen": 1,
+    "format": "smoke",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/v1_40_20260611T091729Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/v1_40_20260611T091729Z",
+    "config_source": "/mnt/public/code/zhuxz/training/templates/lora_4gpu/config.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/v1_40_20260611T091729Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_40_20260611T091729Z/tensorboard",
+      "outputs": "link:/mnt/public/data/zhuxz/results/v1_40_20260611T091729Z",
+      "sft_dataset": "missing_src",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_40_20260611T091729Z"
+    }
+  },
+  {
+    "run_id": "v1_40_20260611T122728Z",
+    "status": "smoke_or_partial",
+    "gen": 1,
+    "format": "smoke",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/v1_40_20260611T122728Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/v1_40_20260611T122728Z",
+    "config_source": "/mnt/public/code/zhuxz/training/templates/lora_4gpu/config.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/v1_40_20260611T122728Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_40_20260611T122728Z/tensorboard",
+      "outputs": "missing_src",
+      "sft_dataset": "missing_src",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_40_20260611T122728Z"
+    }
+  },
+  {
+    "run_id": "v1_40_20260611T123044Z",
+    "status": "smoke_or_partial",
+    "gen": 1,
+    "format": "smoke",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/v1_40_20260611T123044Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/v1_40_20260611T123044Z",
+    "config_source": "/mnt/public/code/zhuxz/training/templates/lora_4gpu/config.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/v1_40_20260611T123044Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_40_20260611T123044Z/tensorboard",
+      "outputs": "missing_src",
+      "sft_dataset": "missing_src",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_40_20260611T123044Z"
+    }
+  },
+  {
+    "run_id": "v1_40_20260612T023109Z",
+    "status": "smoke_or_partial",
+    "gen": 1,
+    "format": "smoke",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/v1_40_20260612T023109Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/v1_40_20260612T023109Z",
+    "config_source": "/mnt/public/code/zhuxz/training/templates/lora_4gpu/config.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/v1_40_20260612T023109Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_40_20260612T023109Z/tensorboard",
+      "outputs": "link:/mnt/public/data/zhuxz/results/v1_40_20260612T023109Z",
+      "sft_dataset": "missing_src",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_40_20260612T023109Z"
+    }
+  },
+  {
+    "run_id": "v1_40_20260612T023601Z",
+    "status": "smoke_or_partial",
+    "gen": 1,
+    "format": "smoke",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/v1_40_20260612T023601Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/v1_40_20260612T023601Z",
+    "config_source": "/mnt/public/code/zhuxz/training/templates/lora_4gpu/config.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/v1_40_20260612T023601Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_40_20260612T023601Z/tensorboard",
+      "outputs": "link:/mnt/public/data/zhuxz/results/v1_40_20260612T023601Z",
+      "sft_dataset": "missing_src",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_40_20260612T023601Z"
+    }
+  },
+  {
+    "run_id": "v1_40_20260612T070030Z",
+    "status": "smoke_or_partial",
+    "gen": 1,
+    "format": "smoke",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/v1_40_20260612T070030Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/v1_40_20260612T070030Z",
+    "config_source": "/mnt/public/code/zhuxz/training/templates/lora_4gpu/config.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/v1_40_20260612T070030Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_40_20260612T070030Z/tensorboard",
+      "outputs": "missing_src",
+      "sft_dataset": "missing_src",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_40_20260612T070030Z"
+    }
+  },
+  {
+    "run_id": "v1_40_20260612T070136Z",
+    "status": "smoke_or_partial",
+    "gen": 1,
+    "format": "smoke",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/v1_40_20260612T070136Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/v1_40_20260612T070136Z",
+    "config_source": "/mnt/public/code/zhuxz/training/templates/lora_4gpu/config.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/v1_40_20260612T070136Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_40_20260612T070136Z/tensorboard",
+      "outputs": "link:/mnt/public/data/zhuxz/results/v1_40_20260612T070136Z",
+      "sft_dataset": "missing_src",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_40_20260612T070136Z"
+    }
+  },
+  {
+    "run_id": "v1_40_20260612T090300Z",
+    "status": "smoke_or_partial",
+    "gen": 1,
+    "format": "smoke",
+    "code_dir": "/mnt/public/code/zhuxz/training/runs/v1_40_20260612T090300Z",
+    "data_dir": "/mnt/public/data/zhuxz/training_runs/v1_40_20260612T090300Z",
+    "config_source": "/mnt/public/code/zhuxz/training/templates/lora_4gpu/config.yaml",
+    "links": {
+      "checkpoints": "link:/mnt/public/data/zhuxz/checkpoints/v1_40_20260612T090300Z",
+      "tensorboard": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_40_20260612T090300Z/tensorboard",
+      "outputs": "link:/mnt/public/data/zhuxz/results/v1_40_20260612T090300Z",
+      "sft_dataset": "missing_src",
+      "legacy_logs_dir": "link:/mnt/public/data/zhuxz/runtime_logs/training/v1_40_20260612T090300Z"
+    }
+  }
+]

@@ -1,0 +1,41 @@
+# Earlytrain LoRA SFT for generator_v5 CoT pack (~11.3k rows, rationale + ####).
+# personal_scaffold only — does not modify configs/training/*.
+#
+# Why these knobs (vs your previous configs):
+# - NOT stage2_mmlu: that was continual LoRA from GSM8K adapter with mild LR.
+#   This run is a fresh first train on the new v5 probe set → start from base.
+# - Like qwen35_4b_lora_18k: r=32/alpha=64, lr=5e-5, 2 epochs (N≈11k, diverse MCQ).
+# - Like gsm8k_cot / stage2: cutoff_len=2048 so rationale+#### rarely truncates
+#   (~0.1% over 2048 by char heuristic; ~2.6% would clip at 1024).
+# - effective batch = 1 * 16 = 16 (same as prior single-GPU jobs).
+# - Metax: attn_implementation must stay eager.
+
+enabled: true
+backend: native
+
+base_model_path: /mnt/public/data/zhuxz/models/Qwen3.5-4B
+checkpoint_dir: null
+tensorboard_log_dir: null
+
+template: qwen
+finetuning_type: lora
+
+lora_rank: 32
+lora_alpha: 64
+lora_dropout: 0.05
+cutoff_len: 2048
+
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 16
+learning_rate: 5.0e-5
+num_train_epochs: 2.0
+warmup_ratio: 0.03
+val_size: 0.1
+bf16: true
+logging_steps: 5
+save_steps: 100
+seed: 42
+
+attn_implementation: eager
+
+llamafactory_cli: llamafactory-cli

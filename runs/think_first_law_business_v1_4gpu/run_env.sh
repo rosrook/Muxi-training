@@ -1,0 +1,17 @@
+# Generated for step-reasoning rewrite v1 (full1804). Owned by this run only.
+export RUN_ID="think_first_law_business_v1_4gpu"
+# Symlink → rewrite_step_v1/full1804_*/sft_dataset.jsonl (user+assistant process SFT)
+export SFT_DATASET="/mnt/public/data/zhuxz/training_runs/think_first_law_business_v1_4gpu/sft_dataset.jsonl"
+export TRAINING_CONFIG="/mnt/public/code/zhuxz/training/runs/think_first_law_business_v1_4gpu/config.yaml"
+export CHECKPOINT_DIR="/mnt/public/data/zhuxz/training_runs/think_first_law_business_v1_4gpu/checkpoints"
+export TENSORBOARD_DIR="/mnt/public/data/zhuxz/training_runs/think_first_law_business_v1_4gpu/tensorboard"
+export OUTPUT_DIR="/mnt/public/data/zhuxz/training_runs/think_first_law_business_v1_4gpu/outputs"
+export MODEL_SOURCE="${MODEL_SOURCE:-/mnt/public/model/Qwen3.5-4B}"
+export MODEL_LINK="${MODEL_LINK:-/mnt/public/data/zhuxz/models/Qwen3.5-4B}"
+export BPG_SRC="${BPG_SRC:-/mnt/public/code/zhuxz/bench_probe_gen/src}"
+export TRAINING_BACKEND="${TRAINING_BACKEND:-native}"
+export NPROC_PER_NODE="${NPROC_PER_NODE:-4}"
+export CUDA_DEVICES="${CUDA_DEVICES:-0,1,2,3}"
+export MASTER_ADDR="${MASTER_ADDR:-127.0.0.1}"
+export MASTER_PORT="${MASTER_PORT:-29541}"
+export SFT_FORMAT="step_reasoning_v1"

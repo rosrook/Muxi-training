@@ -1,0 +1,17 @@
+{
+  "run_id": "v1_remote_1000_02",
+  "migrated_at": "2026-08-03T07:49:38.304543+00:00",
+  "status": "completed",
+  "generation": 1,
+  "format": "short_answer",
+  "legacy": {
+    "checkpoints": "/mnt/public/data/zhuxz/checkpoints/v1_remote_1000_02",
+    "runtime_logs": "/mnt/public/data/zhuxz/runtime_logs/training/v1_remote_1000_02",
+    "outputs": "/mnt/public/data/zhuxz/results/v1_remote_1000_02",
+    "sft": "/mnt/public/data/zhuxz/results/v1_remote_1000_02/training/sft_dataset.jsonl",
+    "config_source": "/mnt/public/code/zhuxz/bench_probe_gen/configs/training/qwen35_4b_lora.yaml"
+  },
+  "code_dir": "/mnt/public/code/zhuxz/training/runs/v1_remote_1000_02",
+  "data_dir": "/mnt/public/data/zhuxz/training_runs/v1_remote_1000_02",
+  "note": "Scripts/config are local copies. Artifacts are symlinked from legacy paths."
+}

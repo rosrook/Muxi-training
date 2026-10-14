@@ -1,0 +1,37 @@
+# 4-GPU LoRA SFT — earlytrain_v5 CoT scale ablation: 9k subset.
+# Independent HP file for this run only; edit freely without affecting 6k/3k/1k.
+#
+# Global batch = per_device * n_gpu * accum = 1 * 4 * 4 = 16
+# Launch: bash personal_scaffold/runtime_error_case_backtest/run_earlytrain_v5_scale_9k_4gpu.sh
+#
+# Metax: attn_implementation must stay eager.
+
+enabled: true
+backend: native
+
+base_model_path: /mnt/public/data/zhuxz/models/Qwen3.5-4B
+checkpoint_dir: null
+tensorboard_log_dir: null
+
+template: qwen
+finetuning_type: lora
+
+lora_rank: 32
+lora_alpha: 64
+lora_dropout: 0.05
+cutoff_len: 2048
+
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 4
+learning_rate: 5.0e-5
+num_train_epochs: 2.0
+warmup_ratio: 0.03
+val_size: 0.1
+bf16: true
+logging_steps: 5
+save_steps: 100
+seed: 42
+
+attn_implementation: eager
+
+llamafactory_cli: llamafactory-cli

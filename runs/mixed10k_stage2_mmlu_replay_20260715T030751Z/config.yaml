@@ -1,0 +1,34 @@
+# Stage-2 continual LoRA: brief-MMLU (#### letter) + GSM8K CoT replay.
+# Start from mixed10k_gsm8k_cot adapter (r=16). Milder LR to limit GSM forgetting.
+#
+# personal_scaffold only — does not modify configs/training/*.
+
+enabled: true
+backend: native
+
+base_model_path: /mnt/public/data/zhuxz/models/Qwen3.5-4B
+checkpoint_dir: null
+tensorboard_log_dir: null
+
+template: qwen
+finetuning_type: lora
+
+lora_rank: 16
+lora_alpha: 16
+lora_dropout: 0.05
+cutoff_len: 2048
+
+per_device_train_batch_size: 1
+gradient_accumulation_steps: 16
+learning_rate: 3.0e-5
+num_train_epochs: 1.0
+warmup_ratio: 0.05
+val_size: 0.1
+bf16: true
+logging_steps: 5
+save_steps: 100
+seed: 42
+
+attn_implementation: eager
+
+llamafactory_cli: llamafactory-cli
